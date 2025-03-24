@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 enum Priority {
     LOW, MEDIUM, HIGH
@@ -64,7 +65,9 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        this.tasks = this.tasks.stream()
+                .filter((task) -> !task.getName().equals(name))
+                .collect(Collectors.toList());
     }
 
     // 2. Find all completed tasks
