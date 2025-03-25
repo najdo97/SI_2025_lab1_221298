@@ -1,0 +1,19 @@
+*   49ded10 (HEAD -> master, origin/master, origin/HEAD) Merge branch '4-list-tasks-sorted-by-name'
+|\
+| * a1ceff1 (origin/4-list-tasks-sorted-by-name, 4-list-tasks-sorted-by-name) Changing the logic for sorting tasks by name
+* | 4b7f518 (origin/6-filter-tasks-by-category, 6-filter-tasks-by-category) Logic for filter tasks by category implemented
+* | 14e64d4 Merge conflicts resolved for List tasks sorted by name
+|\|
+| * 59d3c46 Logic for sorting tasks implemented
+* |   caeaca9 (2-remove-a-task-by-name) Merge pull request #12 from najdo97/3-find-all-completed-tasks
+|\ \
+| * | 889456f (origin/3-find-all-completed-tasks, 3-find-all-completed-tasks) Feature 'Find all completed tasks' implemented
+| |/
+* |   4b95aff Merge pull request #11 from najdo97/2-remove-a-task-by-name
+|\ \
+| |/
+|/|
+| * cfc5b80 (origin/2-remove-a-task-by-name) Implementing 'Remove a task by name' logic
+|/
+* 7ca5186 Add starter code
+* fec5855 Initial commit

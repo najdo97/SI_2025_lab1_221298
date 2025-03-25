@@ -1,0 +1,185 @@
+	git clone https://github.com/najdo97/SI_2025_lab1_221298.git
+--------------------------------------
+Creating Readme.md file
+
+	git add .
+	git commit -m "Initial commit"
+	git push
+--------------------------------------
+Adding the starter code
+	git add .
+	git commit -m "Add starter code"
+	git push
+--------------------------------------
+Fetching all 3 branches created on the remote repo
+
+	git fetch origin
+--------------------------------------
+Switiching to a branch "2-remove-a-task-by-name"
+
+	git checkout 2-remove-a-task-by-name
+--------------------------------------
+Active branch: 	*2-remove-a-task-by-name
+Implementing "remove a task by name" logic
+
+	git add .
+	git commit -m "Implementing 'Remove a task by name' logic"
+	git push
+--------------------------------------
+Remote branch "2-remove-a-task-by-name" gets updated, the pull request and merge is done on GitHub
+--------------------------------------
+
+Switiching to a branch "master"
+	git checkout master
+--------------------------------------
+Updating the latest changes on master
+	git pull
+--------------------------------------
+
+Switiching to a branch "3-find-all-completed-tasks"
+	git checkout 3-find-all-completed-tasks
+
+--------------------------------------
+Active branch: 	*3-find-all-completed-tasks
+Implementing logic for "finding all completed tasks"
+
+	git add .
+	git commit -m "Feature 'Find all completed tasks' implemented"
+	git push
+
+--------------------------------------
+Remote branch "3-find-all-completed-tasks" gets updated, the pull request and merge is done on GitHub
+--------------------------------------
+Switiching to a branch "master"
+	git checkout master
+--------------------------------------
+Updating the latest changes on master
+	git pull
+--------------------------------------
+Switiching to a branch "4-list-tasks-sorted-by-name"
+	git checkout 4-list-tasks-sorted-by-name
+--------------------------------------
+Active branch: 	* 4-list-tasks-sorted-by-name
+Implementing logic for "sorting the tasks bt name"
+
+	git add .
+	git commit -m "Feature 'Logic for sorting tasks implemented"
+	git push
+-----------------------------------------
+Switching to master branch
+
+	 git checkout master
+----------------------------------------
+Merging the branch without making a pull request ( this is a mistake i correct later)
+
+	git merge 4-list-tasks-sorted-by-name
+----------------------------------------
+Merging fails
+	Auto-merging SI2025Lab1Main.java
+	CONFLICT (content): Merge conflict in SI2025Lab1Main.java
+	Automatic merge failed; fix conflicts and then commit the result.
+----------------------------------------
+
+I resolved the conflicts in the edditor, i discarded the changes from the master branch and accepted the code from the "4-list-tasks-sorted-by-name" branch
+	git add .
+	git commit -m "Merge conflicts resolved for List tasks sorted by name"
+
+Response:
+	[master 14e64d4] Merge conflicts resolved for List tasks sorted by name
+----------------------------------------
+Updating the master branch
+	git push
+--------------------------------------
+
+The issue on GitHub never got completed and it stayed activein the "In Progress" tab in the Khanban style project tracker.
+
+--------------------------------------
+On the remote repo I created another branch "6-filter-tasks-by-category" and I retrieved it on my local repo
+
+	git fetch origin
+--------------------------------------
+Switiching to branch "6-filter-tasks-by-category"
+
+	git checkout 6-filter-tasks-by-category
+--------------------------------------
+Implementing logic for "Filtering tasks by category" and pushing the changes to the remote branch "6-filter-tasks-by-category"
+
+	git add .
+	git commit -m "Logic for filter tasks by category implemented"
+	git push
+--------------------------------------
+Creating a Pull Request on Github
+--------------------------------------
+Going back to master branch
+
+	git checkout master
+--------------------------------------
+Merging the master branch with "6-filter-tasks-by-category" branch
+
+	git merge 6-filter-tasks-by-category
+
+Response:
+	 SI2025Lab1Main.java | 7 +++++--
+	 1 file changed, 5 insertions(+), 2 deletions(-)
+	Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+	To https://github.com/najdo97/SI_2025_lab1_221298.git
+  	 14e64d4..4b7f518  master -> master
+	branch 'master' set up to track 'origin/master'.
+
+--------------------------------------
+FIXING MY MISTAKE
+--------------------------------------
+
+Switiching to branch "4-list-tasks-sorted-by-name"
+
+	git checkout 4-list-tasks-sorted-by-name
+--------------------------------------
+Changing the logic for sorted by name and updating the "4-list-tasks-sorted-by-name" branch
+
+	git add .
+	git commit -m "Changing the logic for sorting tasks by name"
+	git push
+
+Response: 
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 399 bytes | 399.00 KiB/s, done.
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/najdo97/SI_2025_lab1_221298.git
+   	59d3c46..a1ceff1  4-list-tasks-sorted-by-name -> 4-list-tasks-sorted-by-name
+
+--------------------------------------
+Creating a Pull Request on Github
+--------------------------------------
+Going back to master branch
+
+	git checkout master
+--------------------------------------
+Merging the master branch with "4-list-tasks-sorted-by-name" branch
+
+	git merge 4-list-tasks-sorted-by-name
+
+Response:
+	Auto-merging SI2025Lab1Main.java
+	Merge made by the 'ort' strategy.
+ 	1 file changed, 4 insertions(+), 1 deletion(-)
+	PS C:\Users\Borjan\Desktop\SI_2025_lab1_221298> git push
+	Enumerating objects: 7, done.
+	Counting objects: 100% (7/7), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 427 bytes | 427.00 KiB/s, done.
+	Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/najdo97/SI_2025_lab1_221298.git
+	4b7f518..49ded10  master -> master
+
+----------------------------------------------
+Addig logs && notes files
+
+	git add .
+	git commit -m "Adding complete log graph and notes"
+	git push --all origin
+
+
