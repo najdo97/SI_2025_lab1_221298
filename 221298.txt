@@ -179,7 +179,7 @@ Response:
 Addig logs && notes files
 
 	git add .
-	git commit -m "Adding complete log graph and notes"
+	git commit -m "Final commit"
 	git push --all origin
 
 
