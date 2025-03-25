@@ -80,10 +80,13 @@ class TaskManager {
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
-        this.tasks = this.tasks
+        List<Task> sortedTasks = new ArrayList<>();
+        sortedTasks = this.tasks
                 .stream()
                 .sorted(Comparator.comparing(Task::getName))
                 .collect(Collectors.toList());
+
+        this.tasks = sortedTasks;
     }
 
     // 4. Sort tasks by priority
