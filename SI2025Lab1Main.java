@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 enum Priority {
     LOW, MEDIUM, HIGH
@@ -75,7 +76,10 @@ class TaskManager {
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
-        // TODO: Implement sorting logic
+        this.tasks = this.tasks
+                .stream()
+                .sorted(Comparator.comparing(Task::getName))
+                .collect(Collectors.toList());
     }
 
     // 4. Sort tasks by priority
